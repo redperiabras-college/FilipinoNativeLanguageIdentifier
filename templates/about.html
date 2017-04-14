@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Filipino Native Language Identifier</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+  <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }} "></script>
+  <script src="{{ url_for('static', filename='js/default.js') }} "></script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="/">Home</a></li>
+              <li class="active" ><a href="about" >About</a><li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Jumbotron Header -->
+        <header class="jumbotron hero-spacer">
+          <div class="row text-justify" style="margin: 0 10% 0 10%;">
+            <h1>Filipino Native Language Identifier</h1>
+            <p>The Philippines is an archipelago that consists of more than 7,000 islands. It is the reason why the Philippines is considered as multilingual country or country with different languages. It is also the reason of having a difficult correlation with each other and makes the country as one.
+            </p>
+            <p>Filipino language is characterized by variation within every province. Varieties which share similar features diverge from one another to different degrees. Divergent varieties are often referred to as dialects. In some cases, the varieties may be distinct enough that some would consider them to be separate languages. In other cases, the varieties may be sufficiently similar to be considered merely characteristic of a particular geographic region, social grouping, or historical era. Sometimes speakers may be aware of dialect variation and be able to label a particular dialect with a name. The variation may go largely unnoticed or overlooked.
+            </p>
+            <p>Language identification is one of the pre-processing unit in natural language processing. It is the task of determining an author’s language through statistical computing and works by identifying patterns. It became increasingly important, as more and more textual data is making its way all. Language identification for most of the national language of every country already exists, but as said, the Filipino language for example is characterized by variety. These variations may affect and cause failure with succeeding pre-processing units of NLP.
+            </p>
+            <p>Using a language model is one of the popular approaches to identify a language. Some of the known modeling techniques are through character n – gram, Markov models, naïve Bayes classifiers, support vector machines, and neural networks.
+            </p>
+            <p>N-gram is the base of language modeling. It is where words or letters are grouped into n from the start up to a document or word’s termination while moving one step at a time. With a lot of training data, n-gram is able to identify unique characteristics of a language by identifying probability of a word or letter given n-1 words or letters. Knowing the dialects of the Filipino language, this may work, but the fact that these dialects are somehow based from Tagalog, the structure of words may still show potential similarities.</p>
+            <p>This <i>native language identification tool</i> recognizes 3 of the 8 major dialects or languages in the Philippines. These languages are <i>Cebuano, Kapampangan and Pangasinense</i>. The Filipino Native Language Identification used Markov chain for language modeling and maximum likelihood decision rule as a method for identifying the native language.
+            </p>
+          </div>
+        </header>
+
+        <hr>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Authors and Developers</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="{{ url_for('static', filename='images/jed.jpg') }}" alt="">
+                    <div class="caption">
+                        <h3>Jedidiah P. Garcia</h3>
+                        <p>jedidiahgarcia2203@gmail.com.</p>
+                        <p>
+                             <a href="https://m.me/jedidiah.garcia" target="_blank" class="btn btn-primary">Contact</a> <a href="https://facebook.com/jedidiah.garcia" target="_blank" class="btn btn-default">More Info</a>
+                        </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="{{ url_for('static', filename='images/jay.jpg') }}" alt="">
+                    <div class="caption">
+                        <h3>Jay Leonarth F. Gecarane</h3>
+                        <p>jaygecarane06@gmail.com</p>
+                        <p>
+                             <a href="https://m.me/jay.gecarane" target="_blank" class="btn btn-primary">Contact</a> <a href="https://facebook.com/jay.gecarane" target="_blank" class="btn btn-default">More Info</a>
+                        </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="{{ url_for('static', filename='images/red.jpg') }}" alt="">
+                    <div class="caption">
+                        <h3>Redentor A. Periabras</h3>
+                        <p>redperiabras@gmail.com</p>
+                        <p>
+                            <a href="https://m.me/redperiabras" target="_blank" class="btn btn-primary">Contact</a> <a href="https://facebook.com/redperiabras" target="_blank" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="{{ url_for('static', filename='images/bap.jpg') }}" alt="">
+                    <div class="caption">
+                        <h3>Paul Vincent DL. Sablan</h3>
+                        <p>paulvincent.sablan@gmail.com</p>
+                        <p>
+                            <a href="https://m.me/paulnutzzzzz" target="_blank" class="btn btn-primary">Contact</a> <a href="https://facebook.com/paulnutzzzzz" target="_blank" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+    <footer class="container-fluid text-center">
+        <div class="row" style="padding-top: 3%; padding-bottom: 3%;">
+          <div class="col-md-4">
+               <img class = "img-circle" src="{{ url_for('static', filename='images/PUP.png') }}" alt="" width="125px" height="125px">
+          </div>
+          <div class="col-md-4">
+               <img class = "img-circle" src="{{ url_for('static', filename='images/CCIS.png') }}" alt="" width="125px" height="125px">
+          </div>
+          <div class="col-md-4">
+               <img class = "img-rounded" src="{{ url_for('static', filename='images/CSR.jpg') }}" alt="" width="175px" height="125px">
+          </div>
+        </div>
+        <div class="row">
+          Filipino Native Language Identifier<br>
+          All Rights Reserved © 2017
+        </div>
+    </footer>
+</body>
+</html>

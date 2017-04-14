@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Filipino Native Language Identifier</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }} "></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Filipino Native Language Identifier</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="about">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid text-center work-area">
+    <div class="row content">
+        <div class="col-md-2 sidenav">
+        </div>
+        <div class="col-md-8 text-left">
+            <div class="row">
+                <textarea form="process" id="file_content" name="file_content" class="text" rows="25" autofocus
+                          required></textarea>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <label class="btn btn-default btn-file">
+                        Select file... <input id="select_file" type="file" style="display: none; width: 100%"
+                                              accept=".txt"> </input>
+                    </label>
+                </div>
+                <div class="col-md-2">
+                    <button id="load_file" class="btn btn-default" onclick="loadFileAsText()">
+                        Load File...
+                    </button>
+                </div>
+                <div class="col-md-8">
+                    <form id="process" style="margin: 0; padding: 0;">
+                        <input type="submit" value="IDENTIFY" class="btn btn-file btn-primary" style="width: 100%">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 sidenav">
+        </div>
+    </div>
+</div>
+
+
+<footer class="container-fluid text-center">
+    Filipino Native Language Identifier<br>
+    All Rights Reserved © 2017
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h3 class="modal-title" id="exampleModalLabel">Filipino Native Language Identifier</h3>
+            </div>
+            <div class="modal-body" style="margin: 0 auto;">
+                <h4>This text is identified as <span id="identification"></span>.</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='js/default.js') }} "></script>
+
+</body>
+</html>
